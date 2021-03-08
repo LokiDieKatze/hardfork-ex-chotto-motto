@@ -10,54 +10,80 @@ La référence de la couleur jaune - #fee500
 /* ajouter une bordure jaune autour du body 24px  */
 /* changer la police pour Changa, laisser le sans-serif comme le 2e choix */
 /* augmente la taille de police au 20px, l'interligne de 1.8 */
+:root {
+--yellow: #fee500;
+
+}
 body {
+font-family: 'Changa', sans-serif;
+border: 1.5rem solid yellow;
+font-size: 1.25rem;
+line-height: 1.8;
 }
 
 /* le block contenu est centré ne dépasse pas la largeur de 720px */
 main {
+  max-width: 45rem;
+  margin: auto;
 }
 
 /* les images ne dépassent pas l'écran */
 img {
+  max-width: 100%;
 }
 /* centrer les éléments de la partie header */
 header {
+  text-align: center;
 }
 
 /* titre h2 centré */
 h2 {
+  text-align: center
 }
 
 /* les éléments dans le footer centrée */
 footer {
+  text-align: center;
 }
 
 /* taille de police plus grande (32px) dans le paragraphe intro, centré */
 .intro {
+  font-size: 2rem;
+  text-align: center;
 }
 
 /* titre h2 centré */
 h2 {
+  text-align: center;
 }
 
 /* les éléments dans le footer centrée */
 footer {
+  text-align: center;
 }
 
 /* la liste sans bullets */
 /* pas de marge ni de padding */
 nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 /* les éléments de la liste affichés dans une ligne */
 nav li {
+ display: inline;
 }
 
 /* les liens dans la partie navigation en majuscules, couleur noir */
 /* espacés de 12px */
 nav a {
+  text-transform: uppercase;
+  color: black;
+  margin: 0.75rem;
 }
 
 /* le lien dans la partie navigation en survol devient jaune  */
 nav a:hover {
+  background: yellow;
 }
